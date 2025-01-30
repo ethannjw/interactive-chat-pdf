@@ -13,18 +13,29 @@ Install requirements
  * Pip3
  * A powerful enough GPU
 
+1. Ensure that you have installed ollama in your machine. 
+    * [Windows](https://github.com/ollama/ollama/blob/main/docs/windows.md)
 
-1. Ensure that you first download and run your desired model
+2. Check that ollama is installed correctly
+```bash
+ollama -v
+```
+If ollama is installed correctly, you should see this:
+`ollama version is 0.3.13`
+
+If not, please check first ollama is installed correctly before proceeding
+
+3. Ensure that you first download and run your desired model
 ```bash
 ollama run deepseek-r1
 ```
 
-2. Install the requirements
+4. Install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the UI
+5. Run the UI
 ```bash
 streamlit run main.py
 ```
